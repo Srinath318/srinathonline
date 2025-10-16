@@ -21,7 +21,7 @@ window.onload = () => {
     let value = input.value.trim().toLowerCase();
     if (value === "show portfolio") {
       input.value = "";
-      window.location.href = "portfolio.html";
+      window.location.href = "portfolio/portfolio.html";
     } else {
       alert("Type 'show portfolio' to go to the Portfolio");
     }
