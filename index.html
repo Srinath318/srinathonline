@@ -3,9 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Srinath Portfolio</title>
+    <title>Search | Srinath Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
-    <h1>Welcome !</h1>
+    <div class="loader">
+      <image src="images/favicon.png" alt="Loading..." />
+    </div>
+
+    <div class="container">
+      <div class="search-box">
+        <!-- Empty p, will be filled by JS -->
+        <p id="typewriter"></p>
+        <input
+          type="text"
+          placeholder="🔍 Type 'show portfolio' and click search"
+        />
+        <button>Search</button>
+      </div>
+
+      <footer>
+        <p>India</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
