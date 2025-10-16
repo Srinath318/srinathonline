@@ -124,6 +124,10 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+  .search-box {
+    padding-top: 25%;
+  }
+
   .search-box p {
     font-size: 70px;
   }
@@ -134,6 +138,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .search-box {
+    padding-top: 35%;
+  }
+
   .search-box p {
     font-size: 50px;
   }
@@ -148,6 +156,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .search-box {
+    padding-top: 45%;
+  }
   .search-box p {
     font-size: 35px;
   }
