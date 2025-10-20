@@ -5,33 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Srinath's Portfolio</title>
   </head>
-    <h1>Welcome to my Portfolio</h1>
-    <hr />
-    <h2>My Projects</h2>
-    <ul>
-      <li>
-        <p>Simple To-Do App</p>
-        <p>
-          <a href="https://simple-todo-project.netlify.app/" target="_blank"
-            >simple-todo-project</a
-          >
-        </p>
-      </li>
-    </ul>
-    <hr />
-    <h2>Test Projects</h2>
-    <ul>
-      <li>
-        <p>Test CRUD App</p>
-        <p>
-          <a href="https://test-crud-app.netlify.app/" target="_blank"
-            >test-crud-app</a
-          >
-        </p>
-      </li>
-    </ul>
-    <hr>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-top">
+          <div class="search-box">
+            <p>Srinath</p>
+            <input type="text" placeholder="Welcome to my Portfolio!" />
+          </div>
+          <div class="icon">
+            <img src="../images/favicon.png" alt="Icon" />
+          </div>
+        </div>
+        <nav class="search-nav">
+          <ul class="nav-tabs">
+            <li class="tab"><a href="#summary">Summary</a></li>
+            <li class="tab"><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <section id="summary">
+          <div class="name-title">
+            <p>Srinath</p>
+            <p>Software Developer</p>
+          </div>
+          <div class="summary-details">
+            <div class="image-layout">
+              <div class="left">
+                <div class="img-wrapper">
+                  <img src="images/mypic2.jpg" alt="pic2" />
+                </div>
+              </div>
+              <div class="right">
+                <div class="img-wrapper">
+                  <img src="images/mypic1.webp" alt="pic1" />
+                </div>
+                <div class="img-wrapper">
+                  <img src="images/mypic3.jpg" alt="pic3" />
+                </div>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <p class="about-heading">About</p>
+              <p class="info-desc">
+                Results-oriented Java Backend Developer (3+ years) skilled in
+                building and maintaining scalable web applications using Core
+                Java, Spring Boot, Spring security and MySQL. Experienced in
+                REST API development, database design, and application
+                performance tuning. Familiar with microservices architecture,
+                JUnit testing, and CI/CD concepts.
+              </p>
+
+              <div class="info-details">
+                <p><strong>Born:</strong> 13 October 2000 (Age: 25 years)</p>
+                <p>
+                  <strong>Dates joined:</strong> September 2022 (Bosch Global
+                  Software Technologies), July 2022 (Matrimony.com)
+                </p>
+                <p>
+                  <strong>Current Company:</strong> Bosch Global Software
+                  Technologies (Software Developer)
+                </p>
+                <p>
+                  <strong>Education:</strong> Velammal College of Engineering
+                  and Technology (B.E. Electronics and Communication
+                  Engineering)
+                </p>
+              </div>
+
+              <div class="info-profiles">
+                <p class="about-heading">Profiles</p>
+
+                <div class="profiles-icons">
+                  <div class="profile-item">
+                    <a
+                      href="https://github.com/Srinath318"
+                      target="_blank"
+                      class="profile github"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <p>Github</p>
+                  </div>
+                  <div class="profile-item">
+                    <a
+                      href="https://www.linkedin.com/in/srinath187/"
+                      target="_blank"
+                      class="profile linkedin"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <p>Linked-In</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section id="projects">
+          <div class="projects-title">
+            <p>Projects</p>
+          </div>
+
+          <div class="projects-flex">
+            <a
+              href="https://simple-todo-project.netlify.app/"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="projects-card">
+                <div class="projects-header">
+                  <p>Simple ToDo Application</p>
+                </div>
+
+                <div class="projects-content">
+                  Full-stack task management app with Spring Boot backend,
+                  PostgreSQL database, and responsive HTML/CSS/JS frontend.
+                  Implemented CRUD REST APIs and deployed on Netlify and Railway
+                  for seamless user experience.
+                </div>
+
+                <div class="image-placeholder">
+                  <img src="images/simple-todo.png" alt="Project Image" />
+                </div>
+              </div>
+            </a>
+
+            <!-- <a
+              href="https://simple-todo-project.netlify.app/"
+              target="_blank"
+              class="project-link"
+            >
+              <div class="projects-card">
+                <div class="projects-header">
+                  <p>CRUD Application #Test</p>
+                </div>
+
+                <div class="projects-content">
+                  Full-stack task management app with Spring Boot backend,
+                  PostgreSQL database, and responsive HTML/CSS/JS frontend.
+                  Implemented CRUD REST APIs and deployed on Netlify and Railway
+                  for seamless user experience.
+                </div>
+
+                <div class="image-placeholder">
+                  <img src="images/simple-todo.png" alt="Project Image" />
+                </div>
+              </div>
+            </a> -->
+          </div>
+        </section>
+
+        <hr />
+      </div>
+
+      <footer>
+        <div>
+          <p>&copy; Srinath 2025. All rights reserved.</p>
+        </div>
+        <div>
+          <p>India</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="portfolio.js"></script>
   </body>
 </html>

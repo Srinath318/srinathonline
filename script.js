@@ -23,7 +23,9 @@ window.onload = () => {
       input.value = "";
       window.location.href = "portfolio/portfolio.html";
     } else {
-      alert("Type 'show portfolio' to go to the Portfolio");
+      alert(
+        "Type 'show portfolio' in the search bar and click the Search button."
+      );
     }
   });
 
