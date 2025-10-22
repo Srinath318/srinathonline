@@ -113,9 +113,7 @@ section {
   margin: 0;
   scroll-margin-top: var(--header-height);
   font-family: "Poppins", sans-serif;
-
-  /* ✅ Added padding-left for all sections */
-  padding-left: 12%; /* <-- change #1 */
+  padding-left: 12%;
 }
 
 /* SUMMARY SECTION */
@@ -156,9 +154,7 @@ section {
   border: #575757 1px solid;
   border-radius: 20px;
   overflow: hidden;
-
-  /* ✅ Increased width since section now has big left padding */
-  width: 115%; /* <-- change #2 */
+  width: 115%;
 }
 
 /* Left column */
@@ -220,10 +216,11 @@ section {
   border-bottom-right-radius: 20px;
 }
 
+/* Info Box */
 .info-box {
   border-left: #575757 1px solid;
   padding-left: 2.5%;
-  line-height: 1.5; /* 1.5 times the font size */
+  line-height: 1.5;
 }
 
 .about-heading {
@@ -286,13 +283,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* reliable spacing between icon and text */
+  gap: 10px;
 }
 
 .profile-item p {
-  margin: 0; /* remove previous margin-top */
+  margin: 0;
   font-size: 15px;
-  color: white; /* optional */
+  color: white;
 }
 
 .github {
@@ -313,6 +310,7 @@ section {
   background-color: #0f83f6;
 }
 
+/* Projects Section */
 #projects {
   color: white;
   padding-top: 1.5%;
@@ -320,7 +318,7 @@ section {
 
 hr {
   border: none;
-  height: 0.5px; /* super thin */
+  height: 0.5px;
   background-color: #575757;
   width: 78%;
   margin-left: 12%;
@@ -333,12 +331,12 @@ hr {
 .projects-flex {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .project-link {
   text-decoration: none;
-  display: block; /* ensures the whole card is clickable */
+  display: block;
 }
 
 .projects-card {
@@ -382,6 +380,7 @@ hr {
   margin-top: 20px;
 }
 
+/* Footer */
 footer {
   bottom: 0;
   width: 100%;
@@ -392,138 +391,4 @@ footer {
   font-weight: 300;
   display: flex;
   justify-content: space-around;
-}
-
-/* ===== FULLY RESPONSIVE FIX FOR OVERLAPS ===== */
-
-/* Large screens: keep original layout */
-@media screen and (max-width: 1024px) {
-  .summary-details {
-    flex-direction: column; /* stack image grid and info-box */
-    gap: 20px;
-  }
-
-  .image-layout {
-    width: 100%;
-    grid-template-columns: 1fr; /* stack images vertically */
-    grid-template-rows: auto; /* auto height */
-    gap: 10px;
-  }
-
-  .left .img-wrapper,
-  .right .img-wrapper {
-    height: 180px; /* reduce size */
-  }
-
-  .info-box {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  section {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-  }
-}
-
-/* Medium screens: tablet and below */
-@media screen and (max-width: 768px) {
-  .header-top {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 5%;
-    gap: 10px;
-  }
-
-  .search-box {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .nav-tabs {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Image grid shrink */
-  .image-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 150px);
-    gap: 10px;
-  }
-
-  .left .img-wrapper,
-  .right .img-wrapper {
-    height: 150px;
-  }
-
-  /* About text below images */
-  .info-box {
-    margin-top: 15px;
-  }
-}
-
-/* Small screens: mobile */
-@media screen and (max-width: 480px) {
-  .header-top {
-    padding: 10px 5%;
-  }
-
-  .search-box p {
-    font-size: 18px;
-  }
-
-  input[type="text"] {
-    font-size: 12px;
-    padding: 8px 12px;
-  }
-
-  .projects-flex {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .projects-card {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-  }
-
-  /* Image grid stack vertically */
-  .image-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-  }
-
-  .left .img-wrapper,
-  .right .img-wrapper {
-    height: 120px; /* smaller images */
-  }
-
-  /* About section separate below images */
-  .info-box {
-    margin-top: 10px;
-    border-left: none;
-    padding-left: 0;
-  }
-
-  section {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
-  }
 }
