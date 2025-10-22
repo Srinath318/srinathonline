@@ -63,3 +63,7 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+function reloadPage() {
+  location.reload();
+}

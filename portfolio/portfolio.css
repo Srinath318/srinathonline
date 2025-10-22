@@ -51,6 +51,7 @@ body {
   font-size: 30px;
   font-weight: 500;
   color: white;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -391,4 +392,253 @@ footer {
   font-weight: 300;
   display: flex;
   justify-content: space-around;
+}
+
+/* ====== Responsive CSS ====== */
+
+/* Hide grid and name/title on tablets and mobiles */
+@media (max-width: 1024px) {
+  .image-layout {
+    display: none; /* grid disappears */
+  }
+
+  .name-title {
+    text-align: center;
+  }
+
+  #summary {
+    padding-left: 5%;
+    padding-top: 8%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .nav-tabs {
+    margin: 0 5%;
+  }
+
+  .projects-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-card {
+    width: 90%;
+    height: auto;
+  }
+
+  hr {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .info-box {
+    border-left: none;
+    padding-top: 3%;
+  }
+
+  .info-profiles {
+    padding-top: 8%;
+  }
+
+  .about-heading {
+    padding-bottom: 3%;
+  }
+
+  .info-details {
+    padding-bottom: 8%;
+  }
+
+  #projects {
+    padding-top: 10%;
+    padding-left: 8%;
+  }
+
+  .projects-title {
+    padding-bottom: 12%;
+  }
+
+  .projects-content {
+    font-size: 20px;
+  }
+
+  .projects-header {
+    font-size: 20px;
+  }
+
+  .search-box input[type="text"]::placeholder {
+    font-size: 9px;
+  }
+}
+
+/* Header-top scaling for all non-desktop devices */
+@media (max-width: 1024px) {
+  .header-top {
+    flex-wrap: nowrap; /* keep in one line */
+    padding: 20px 5%;
+    gap: 10px;
+  }
+
+  .search-box p {
+    font-size: 22px;
+  }
+
+  input[type="text"] {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .icon img {
+    width: 35px;
+  }
+
+  /* Profiles scaling */
+  .profile {
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+  }
+
+  .profile-item p {
+    font-size: 13px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .header-top {
+    gap: 8px;
+  }
+
+  .search-box p {
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    width: 55%;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .icon img {
+    width: 30px;
+  }
+
+  .profile {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  .profile-item p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .header-top {
+    gap: 5px;
+  }
+
+  .search-box p {
+    font-size: 16px;
+  }
+
+  input[type="text"] {
+    width: 50%;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .icon img {
+    width: 25px;
+  }
+
+  .profile {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .profile-item p {
+    font-size: 11px;
+  }
+}
+
+/* Extra small devices (<400px) - compact version */
+@media (max-width: 400px) {
+  /* About & Profiles Headings */
+  .about-heading {
+    font-size: 14px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+  }
+
+  /* About description text */
+  .info-desc {
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+
+  /* Info details text */
+  .info-details p {
+    font-size: 11px;
+    margin-bottom: 1px;
+  }
+
+  /* Profiles icons */
+  .profile {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .profile-item p {
+    font-size: 9px;
+    margin-top: 2px;
+  }
+
+  /* Info box padding */
+  .info-box {
+    padding-left: 1%;
+  }
+
+  .info-profiles {
+    padding-top: 3%;
+  }
+
+  /* Projects cards */
+  .projects-card {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .projects-header p {
+    font-size: 14px;
+  }
+
+  .projects-content {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .image-placeholder img {
+    height: 120px; /* shrink project image */
+    margin-top: 10px;
+  }
+
+  .projects-flex {
+    gap: 10px;
+  }
+
+  /* hr {
+    width: 95%;
+    margin-left: 2.5%;
+  } */
 }
