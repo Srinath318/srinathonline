@@ -332,7 +332,10 @@ hr {
 .projects-flex {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Enable scrolling */
+  overflow-y: hidden; /* Prevent vertical scroll glitch */
+  scrollbar-width: thin;
 }
 
 .project-link {
@@ -398,8 +401,9 @@ footer {
 
 /* Hide grid and name/title on tablets and mobiles */
 @media (max-width: 1024px) {
+  /* FROM FIRST BLOCK */
   .image-layout {
-    display: none; /* grid disappears */
+    display: none;
   }
 
   .name-title {
@@ -420,63 +424,17 @@ footer {
   }
 
   .projects-flex {
-    flex-direction: column;
     align-items: center;
-  }
-
-  .projects-card {
-    width: 90%;
-    height: auto;
-  }
-
-  hr {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .info-box {
-    border-left: none;
-    padding-top: 3%;
-  }
-
-  .info-profiles {
-    padding-top: 8%;
-  }
-
-  .about-heading {
-    padding-bottom: 3%;
-  }
-
-  .info-details {
-    padding-bottom: 8%;
-  }
-
-  #projects {
-    padding-top: 10%;
-    padding-left: 8%;
+    width: 100%;
   }
 
   .projects-title {
-    padding-bottom: 12%;
+    padding: 10% 0%;
   }
 
-  .projects-content {
-    font-size: 20px;
-  }
-
-  .projects-header {
-    font-size: 20px;
-  }
-
-  .search-box input[type="text"]::placeholder {
-    font-size: 9px;
-  }
-}
-
-/* Header-top scaling for all non-desktop devices */
-@media (max-width: 1024px) {
+  /* FROM SECOND BLOCK */
   .header-top {
-    flex-wrap: nowrap; /* keep in one line */
+    flex-wrap: nowrap;
     padding: 20px 5%;
     gap: 10px;
   }
@@ -495,7 +453,6 @@ footer {
     width: 35px;
   }
 
-  /* Profiles scaling */
   .profile {
     width: 45px;
     height: 45px;
@@ -567,6 +524,10 @@ footer {
   .profile-item p {
     font-size: 11px;
   }
+
+  .projects-card {
+    width: 300px;
+  }
 }
 
 /* Extra small devices (<400px) - compact version */
@@ -612,20 +573,8 @@ footer {
     padding-top: 3%;
   }
 
-  /* Projects cards */
-  .projects-card {
-    width: 90%;
-    height: auto;
-    padding: 10px;
-  }
-
   .projects-header p {
     font-size: 14px;
-  }
-
-  .projects-content {
-    font-size: 11px;
-    line-height: 1.2;
   }
 
   .image-placeholder img {
